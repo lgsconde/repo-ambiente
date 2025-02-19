@@ -1,7 +1,7 @@
 # Pipeline Inicial
 name: CD Fake
 on: 
-    workflow_dispatch: 
+    workflow_dispatch: qweqe
 jobs:
     deploy-fake:
         environment: homologacao

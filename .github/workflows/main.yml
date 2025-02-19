@@ -1,7 +1,13 @@
 # Pipeline Inicial
 name: CD Fake
 on: 
-    workflow_dispatch: 
+    workflow_dispatch:
+        inputs:
+                ambiente:
+                    type: choice
+                    options:
+                        - homogacao
+                        - producao 
 jobs:
     deploy-fake:
         environment: homologacao
